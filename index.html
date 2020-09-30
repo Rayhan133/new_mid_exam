@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Style the body */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    /* Header/logo Title */
+    .header {
+      padding: 30px;
+      text-align: center;
+      background: #1abc9c;
+      color: white;
+      display: inline-flex;
+    }
+
+    /* Increase the font size of the heading */
+    .header h1 {
+      font-size: 120px;
+      margin: auto;
+
+    }
+
+    .banner {
+      padding: 10px 0;
+    }
+
+    /* Style the top navigation bar */
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    /* Style the navigation bar links */
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    /* Right-aligned link */
+    .navbar a.right {
+      float: right;
+    }
+
+    /* Change color on hover */
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Column container */
+    .row {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE10 */
+      flex-wrap: wrap;
+    }
+
+    /* Create two unequal columns that sits next to each other */
+    /* Sidebar/left column */
+    .side {
+      -ms-flex: 30%;
+      flex: 30%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    /* Main column */
+    .main {
+      -ms-flex: 70%;
+      /* IE10 */
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+    }
+
+    
+
+    /* Footer */
+    .footer {
+      padding: 10px;
+      text-align: center;
+      background: rgb(122, 119, 119);
+      color:white;
+      
+    
+
+    }
+    .footer ol li{
+      list-style: none;
+      padding: 5px;
+      color: #fff;
+      
+    }
+    .footer ol li a{
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 20px;
+      
+
+
+    }
+
+
+
+    .from-box {
+      height: auto;
+      width: 40%;
+      margin: 6% auto;
+      background: #fff;
+      padding: 5px;
+      overflow: hidden;
+      border: 1px solid rgb(83, 27, 27);
+      background-color: rgb(255, 255, 255);
+
+
+    }
+
+
+    .input-field {
+      width: 100%;
+      padding: 10px 0;
+      margin: 10px 0;
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 1px solid #999;
+      outline: none;
+      background: transparent;
+
+    }
+
+    .submit-btn {
+      width: 50%;
+      padding: 10px;
+      cursor: pointer;
+      display: block;
+      margin: auto;
+      background: linear-gradient(to right, #ff105f, #ffad06);
+      border: 0;
+      outline: none;
+      border-radius: 30px;
+
+    }
+
+    .check-box {
+      margin: 30px 10px 30px 0;
+    }
+
+    span {
+      color: #777;
+      font-size: 12px;
+      bottom: 68px;
+     
+    }
+
+    #login {
+      left: 50px;
+    }
+
+
+
+    /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <img src="logo.jpg" alt="website Logo" width="30%">
+    <h1>ABC</h1>
+
+  </div>
+
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#about">About us</a>
+    <a href="#Related_Images">Related images</a>
+    <a href="#Services">Services</a>
+    <a href="#Exclusive">Exclusive offers</a>
+    <a href="#map">Office Map</a>
+    <a href="#login" class="right">Login/Register</a>
+  </div>
+  <div class="banner">
+    <img src="banner.jpg" alt="Website Banner" width="100%">
+  </div>
+  <div class="row">
+    <div class="side">
+      <h2 id="about">About us</h2>
+      <p>The American Broadcasting Company (abbreviated as ABC; stylized in lowercase as abc) is an American
+        multinational commercial broadcast television network that is a flagship property of Walt Disney Television, a
+        subsidiary of the Disney Media Networks division of The Walt Disney Company.</p>
+
+      <h3 id="Related_Images">Related Images</h3>
+      <p>Our company-related Images</p>
+      <div class="" style="height:60px;"><img src="1.png" alt=""></div> <br>
+      <div class="" style="height:60px; margin-top:150px;"><img src="1.png" alt=""></div><br>
+      <div class="" style="height:60px; margin-top:150px ;"><img src="1.jpg" alt=""></div>
+    </div>
+
+
+
+
+    <div class="main">
+      <h2 id="Exclusive">Exclusive offers</h2>
+      <ol>
+        <li>Home Loans</li>
+        <li>Customer special financing facilities</li>
+        <li>30% off winter offer</li>
+      </ol>
+
+
+      <br>
+      <h2>Login</h2>
+
+      <div class="from-box" id="login">
+        <form id="login" class="input-group">
+          <input type="text" class="input-field" placeholder="User name" required>
+          <input type="text" class="input-field" placeholder="User Id" required>
+          <input type="number" class="input-field" placeholder="Phone number" required>
+          <input type="password" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="check-box"><span>Remember Password</span>
+          <button type="submit" class="submit-btn">Log in</button>
+        </form>
+      </div>
+
+      <h2 id="Services">Services</h2>
+      <h4>IBM Power Systems</h4>
+      <p>To stay competitive, your company needs to meet the performance demands of advanced analytics applications.</p>
+      <h4>Storage Solutions</h4>
+      <p>The rise of big data is relentless. New sources of data are emerging all the time, and companies struggle to meet capacity needs while remaining cost-efficient.</p>
+
+      <h4>Data Protection Services</h4>
+      <p>To stay secure and profitable in today’s threat landscape, companies need to take advantage of the latest in backup and disaster recovery technologies. </p>
+      
+      <h2 id="map">Office Google Map Location</h2>
+
+      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1xzFn3qyuUxzYPO_IC986asFcRjYLnNCN" width="640" height="480"></iframe>
+      
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+  </div>
+
+  <div class="footer">
+    <ol>
+      <li><a href="#" >Email: <span style="text-transform: lowercase; color:white; font-size:20px">rayhanalshorif@gmail.com</span> </a></li>
+      <li> <a href="#">settings</a></li>
+      <li> <a href="#">Services</a></li>
+      <li> <a href="#">Others Link</a></li>
+    </ol>
+    
+  </div>
+
+</body>
+
+</html>
